@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+    CEN 4072 - Software Testing | Spring 2026
+    PARALLEL EXECUTION — parallel="tests" thread-count="4"
+    4 Chrome browsers open simultaneously
+    ThreadLocal WebDriver ensures each thread gets its own browser
+    Team: Damian, Natalie Herrera, Miguel Gomez
+    40 test cases: 8 classes x 5 methods
+-->
+<suite name="Spotify Suite - PARALLEL" verbose="2" parallel="tests" thread-count="4">
+
+    <test name="Login Tests">
+        <classes><class name="spotify.login.LoginTest"/></classes>
+    </test>
+
+    <test name="Signup Tests">
+        <classes><class name="spotify.signup.SignupTest"/></classes>
+    </test>
+
+    <test name="Search Tests">
+        <classes><class name="spotify.search.SearchTest"/></classes>
+    </test>
+
+    <test name="Playlist Tests">
+        <classes><class name="spotify.playlist.PlaylistTest"/></classes>
+    </test>
+
+    <test name="Player Tests">
+        <classes><class name="spotify.player.PlayerTest"/></classes>
+    </test>
+
+    <test name="Account Tests">
+        <classes><class name="spotify.account.AccountTest"/></classes>
+    </test>
+
+    <test name="Integration Tests">
+        <classes><class name="spotify.integration.IntegrationTest"/></classes>
+    </test>
+
+    <test name="Navigation Tests">
+        <classes><class name="spotify.navigation.NavigationTest"/></classes>
+    </test>
+
+</suite>
