@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+    CEN 4072 — Software Testing | Spring 2026
+    Spotify Web Automation — SERIAL EXECUTION
+    parallel="none" — one browser at a time, in order
+    Team: Damian · Natalie Herrera · Miguel Gomez
+    40 test cases: 8 classes × 5 methods
+-->
+<suite name="Spotify Suite — SERIAL" verbose="2" parallel="none">
+    <test name="01 — Login Tests">
+        <classes><class name="spotify.login.LoginTest"/></classes>
+    </test>
+    <test name="02 — Signup Tests">
+        <classes><class name="spotify.signup.SignupTest"/></classes>
+    </test>
+    <test name="03 — Search Tests">
+        <classes><class name="spotify.search.SearchTest"/></classes>
+    </test>
+    <test name="04 — Playlist Tests">
+        <classes><class name="spotify.playlist.PlaylistTest"/></classes>
+    </test>
+    <test name="05 — Player Tests">
+        <classes><class name="spotify.player.PlayerTest"/></classes>
+    </test>
+    <test name="06 — Account Tests">
+        <classes><class name="spotify.account.AccountTest"/></classes>
+    </test>
+    <test name="07 — Integration Tests">
+        <classes><class name="spotify.integration.IntegrationTest"/></classes>
+    </test>
+    <test name="08 — Navigation Tests">
+        <classes><class name="spotify.navigation.NavigationTest"/></classes>
+    </test>
+</suite>
